@@ -1,14 +1,15 @@
-# INSERT PROJECT TITLE
+# Restaurant Page
 
 Link: _Available later_  
-Include project description and use case. List tech stack and other technologies used.  
+Sample restaurant page created with the goal of practicing ES6 modules and webpacks.
 
 Note: might have to remove package.json and package-lock.json and remake using steps below as they are specific to each repo.
+
 > **Use as future project template for ESLint & Prettier. Note: make a template repo excluding main.js, index.html, style.css. Run npm install within repo directory locally and you should be good to go.**
 
-## Setting up prettier
+## First time setting up Prettier
 
-1. `npm install --save-dev --save-exact prettier` in the repo you’re working on so on a per project basis
+1. `npm install --save-dev --save-exact prettier` in the repo you’re working on so on a per project basis. Skip 2 and 3 if using this project template.
 2. `echo {}> .prettierrc.json` to create a file that is needed to recognise this repo uses prettier
 3. `touch .prettierignore` and put files to be ignored in it based on your ESLintignore and/or gitignore file (gitignore would be recommended to copy over)
 
@@ -25,7 +26,7 @@ CVS
 Thumbs.db
 ```
 
-4. install Prettier extension in VSCode to be able to format using a shortcut or set it up to run on save etc.
+4. Install Prettier extension in VSCode to be able to format using a shortcut or set it up to run on save etc.
 
 _For more info on setting up a gitignore file:_
 https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/
