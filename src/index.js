@@ -1,3 +1,7 @@
+import './style.css';
+import { header, image, headliner } from './initialpage'
 
-const test = 'Hello World'
-console.log(test);
+header();
+image();
+headliner();
+
