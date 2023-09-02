@@ -1,0 +1,22 @@
+:root {
+  --darkbackgroundcolor: rgb(0, 0, 0);
+  --darkhefooterbackcolor: rgb(30, 30, 30);
+  --darktextcolor: rgb(255, 255, 255);
+  --cardbackgroundcolor: rgb(255, 255, 255);
+  --cardbackgroundshadow: rgb(247, 90, 38);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+
+html,
+body {
+  background-color: var(--cardbackgroundcolor);
+  color: var(--darkbackgroundcolor);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
