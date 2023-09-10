@@ -1,7 +1,9 @@
 import './style.css';
-import { header, image, headliner } from './initialpage'
+import initializeNavBar, { switchContact, switchHome, switchMenu } from './initialsite';
+import initializePage from './home'
 
-header();
-image();
-headliner();
-
+initializeNavBar();
+initializePage();
+switchContact();
+switchMenu();
+switchHome();
