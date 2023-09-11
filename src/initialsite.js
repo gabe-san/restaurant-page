@@ -1,8 +1,8 @@
 import loadContactInfo from './contact';
 import loadMenuInfo from './menu';
-import { loadHome } from './home';
+import loadHome from './home';
 
-function createNav() {
+export function createNav() {
   const nav = document.createElement('div');
   const homeButton = document.createElement('button');
   homeButton.classList.add('homeEvent');
@@ -20,15 +20,6 @@ function createNav() {
 
   return nav;
 }
-
-function initializeNavBar() {
-  const navBarIni = document.createElement('div');
-  const contentReference = document.querySelector('#content');
-  navBarIni.appendChild(createNav());
-  contentReference.appendChild(navBarIni);
-}
-
-export default initializeNavBar;
 
 export function switchContact() {
   const contactButtonEvent = document.querySelector('.contactEvent');
@@ -49,4 +40,22 @@ export function switchHome() {
   homeButtonEvent.addEventListener('click', () => {
     loadHome();
   })
+}
+
+export default function initializePage() {
+  const navBarIni = document.createElement('div');
+  navBarIni.classList.add('navbar');
+  const contentReference = document.querySelector('#content');
+  navBarIni.appendChild(createNav());
+  contentReference.appendChild(navBarIni);
+
+  const main = document.createElement('div');
+  main.classList.add('main');
+  contentReference.appendChild(main);
+  loadHome();
+
+  const footer = document.createElement('footer');
+  footer.textContent = 'All assets credited to PoEWiki.net'
+  contentReference.appendChild(footer);
+
 }

@@ -1,9 +1,8 @@
 import './style.css';
-import initializeNavBar, { switchContact, switchHome, switchMenu } from './initialsite';
-import initializePage from './home'
+import initializePage, { switchContact, switchHome, switchMenu } from './initialsite';
 
-initializeNavBar();
+
 initializePage();
 switchContact();
 switchMenu();
-switchHome();
+switchHome()

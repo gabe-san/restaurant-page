@@ -1,4 +1,4 @@
-import Kurai from './Kurai_portrait.png';
+import Kurai from '../dist/images/Kurai.png';
 
 function contactInfo() {
   const divContact = document.createElement('div');

@@ -6,7 +6,7 @@ function createMenuItem(name, descriptor) {
   const foodDescriptor = document.createElement('p');
   foodDescriptor.textContent = descriptor;
   const foodImage = document.createElement('img');
-  foodImage.src = `src/${name.toLowerCase()}.png`
+  foodImage.src = `images/${name}.png`;
   foodImage.alt = `${name}`;
 
 
@@ -46,7 +46,7 @@ function menuInfo() {
   return menu;
 }
 
-function loadMenuInfo() {
+export default function loadMenuInfo() {
   const menuHeader = document.createElement('h1')
   menuHeader.textContent = 'Menu';
   const main = document.querySelector('.main');
@@ -54,5 +54,3 @@ function loadMenuInfo() {
   main.appendChild(menuHeader);
   main.appendChild(menuInfo());
 }
-
-export default loadMenuInfo;
