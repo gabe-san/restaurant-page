@@ -2,7 +2,7 @@ import loadContactInfo from './contact';
 import loadMenuInfo from './menu';
 import loadHome from './home';
 
-export function createNav() {
+function createNav() {
   const nav = document.createElement('div');
   const homeButton = document.createElement('button');
   homeButton.classList.add('homeEvent');
