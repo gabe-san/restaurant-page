@@ -1,6 +1,6 @@
 # Restaurant Page
 
-Link: _Available later_  
+Link: https://gabe-san.github.io/restaurant-page/  
 Sample restaurant page created with the goal of practicing ES6 modules and webpacks.
 
 Note: might have to remove package.json and package-lock.json and remake using steps below as they are specific to each repo.
