@@ -1,5 +1,6 @@
 function createMenuItem(name, descriptor) {
   const menuItem = document.createElement('div');
+  menuItem.classList.add('card');
 
   const foodName = document.createElement('h3');
   foodName.textContent = name;
@@ -19,6 +20,7 @@ function createMenuItem(name, descriptor) {
 
 function menuInfo() {
   const menu = document.createElement('div');
+  menu.classList.add('cardContent');
   menu.appendChild(
     createMenuItem(
       'Quickened Silver Ale',
